@@ -1,0 +1,71 @@
+#content {
+    width: 66.6666%;
+    background-color: #1F2937;
+    padding: 3rem 2rem;
+}
+
+.content-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-header button {
+    font-size: 2.5rem;
+    padding: 1rem 1rem 1.3rem 1.2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.375rem;
+    position: relative;
+    bottom: 0.375rem;
+    right: -0.375rem;
+}
+
+.content-header button:hover,
+.content-header button:active {
+    background-color: #4b5563bb;
+
+}
+
+/* TO DO LIST */
+
+.to-do {
+    margin-top: 4rem;
+}
+
+.to-do ol li {
+    display: flex;
+    line-height: 1.25;
+    gap: 1.3rem;
+}
+
+.to-do ol li p  {
+    flex-grow: 1;
+    padding: 0.825rem 0 0.825rem 0;
+    border-bottom: 1px solid rgb(55, 65, 81);
+}
+
+.to-do svg {
+    flex: none;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-top: 0.425rem;
+    margin-right: 0.425rem;
+    stroke: white;
+    stroke-width: 1;
+    fill: rgb(55, 65, 81);
+    stroke: rgb(28, 34, 43);
+    cursor: pointer;
+}
+
+.to-do svg:hover,
+.to-do svg:active {
+    fill: rgb(var(--color-flagged));
+    stroke: rgb(var(--color-flagged));
+    
+}
+
+.titles {
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: rgb(var(--color-today));
+}
+

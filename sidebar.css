@@ -1,0 +1,189 @@
+#sidebar {
+    width: 33.3333%;
+    background-color: #4B5563;
+    padding: 3rem 2rem;
+}
+
+/* CONTROLS */
+
+#controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.btns {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    margin-right: 0.8rem;
+    background-color: black;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+.close {
+    background-color: rgb(214, 47, 47);
+}
+
+.maximize {
+    background-color: rgb(243, 243, 73);
+}
+
+.minimize {
+    background-color: rgb(75, 167, 75);
+}
+
+.close:hover, .close:active {
+    background-color: rgba(214, 47, 47, 0.511);
+}
+
+.maximize:hover, .maximize:active {
+    background-color: rgba(243, 243, 73, 0.512);
+}
+
+.minimize:hover, .minimize:active {
+    background-color: rgba(75, 167, 75, 0.548);
+}
+
+
+
+/* SEARCH BAR */
+
+form {
+    margin:2.3rem 0;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0.7rem;
+}
+
+#search-bar::placeholder {
+    color: white;
+	opacity: 0.5;
+	font-weight: normal;
+}
+
+/*NAVIGATION*/
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.8rem;
+}
+
+.grid a {
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 1.2rem 1rem;
+	border-radius: 0.5rem;
+}
+
+.grid a:hover {
+	color: white;
+}
+
+.grid .today:hover {
+	background: rgb(var(--color-today));
+}
+
+.grid .scheduled:hover {
+	background: rgb(var(--color-scheduled));
+}
+
+.grid .all:hover {
+	background: rgb(var(--color-all-darker));
+}
+
+.grid .flagged:hover {
+	background: rgb(var(--color-flagged));
+}
+
+/*  */
+.grid p {
+	display: flex;
+	justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+
+.grid p span {
+    font-size: 2.3rem;
+    line-height: 4.3rem;
+}
+
+aside svg {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 2.25rem;
+
+	stroke: white;
+	fill: white;
+
+	padding: 0.7rem;
+	margin-bottom: 0.375rem;
+    
+}
+
+.grid span {
+	font-size: 1.5rem;
+	line-height: 2.375rem;
+}
+
+.today svg {
+	background-color: rgb(var(--color-today));
+}
+
+.scheduled svg {
+	background-color: rgb(var(--color-scheduled));
+}
+
+.all svg {
+	background-color: rgb(var(--color-all-darker));
+}
+
+.flagged svg {
+	background-color: rgb(var(--color-flagged));
+}
+
+/* LISTS */
+
+.lists {
+    margin-top: 2.3rem;
+}
+
+.lists ol {
+    margin-top: 1rem;
+}
+
+.lists a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lists h3 {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.431);
+}
+
+
+.reminders svg {
+    width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 2.25rem;
+
+	stroke: white;
+	fill: white;
+
+	padding: 0.7rem;
+	margin-bottom: 0.375rem;
+
+    background-color: rgb(var(--color-today));
+}
+
+
